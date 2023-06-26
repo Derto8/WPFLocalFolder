@@ -1,0 +1,23 @@
+﻿<Page x:Class="ClientGUI.Pages.ConnectToServer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClientGUI.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="ConnectToServer">
+
+    <Grid Background="White">
+        <Grid Background="Black" Margin="0,0,0,285">
+            <Label Content="Подключение к серверу" Foreground="White" FontSize="22" Margin="67,0,10,28" Height="58" VerticalAlignment="Bottom"/>
+        </Grid>
+        <Grid Background="White" Margin="0,120,0,0">
+            <Label Content="Введите Ip-адрес" Foreground="Black" FontSize="22" Margin="33,0,67,229" Height="41" VerticalAlignment="Bottom"/>
+            <TextBox Text="127.0.0.1" FontSize="32" x:Name="Ip" Background="Black" Foreground="White" Margin="33,0,33,187" Height="46" VerticalAlignment="Bottom"/>
+            <Label Content="Введите Port" Foreground="Black" FontSize="22" Margin="33,0,67,141" Height="41" VerticalAlignment="Bottom"/>
+            <TextBox Text="5000" FontSize="32" x:Name="Port" Background="Black" Foreground="White" Margin="33,0,33,94" Height="46" VerticalAlignment="Bottom"/>
+            <Button Background="Black" Content="Продолжить" FontSize="16" Click="Connect" Foreground="White" Margin="82,0,82,10" Height="53" VerticalAlignment="Bottom"/>
+        </Grid>
+    </Grid>
+</Page>
